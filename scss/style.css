@@ -1,0 +1,39 @@
+h1 {
+  font-size: 6em;
+  font-size: calc(2em + 2vw);
+  font-family: Arial, Helvetica;
+  margin: 0;
+}
+
+.intro p {
+  width: 50%;
+  margin: 0.5em auto;
+  font-size: 1.65em;
+}
+
+.section {
+  font-family: Arial, Helvetica;
+  color: #fff;
+  text-align: center;
+}
+
+.fp-section:nth-child(1) {
+  background-image: url(../img/main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+
+.fp-section:nth-child(2) {
+  background-image: linear-gradient(128deg, #ff9a3f, #ff4b40);
+}
+
+.fp-section:nth-child(3) {
+  background-image: linear-gradient(128deg, #fc40ff, #543fff);
+}
+
+/* Overwriting styles for the navigation dots */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
