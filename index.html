@@ -3,22 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fullPage.js Demo</title>
+    <title>Wedding Invitation</title>
     <link rel="stylesheet" href="./scss/style.css">
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div id="fullpage">
-    <div class="section">
+    <div class="section" id="main">
         <div class="intro">
         </div>
     </div>
-    <div class="section">
-        <h1>Section 2</h1>
+    <div class="section" id="invite">
+        <div class="textbox1">
+            초대합니다<br>
+            2024.11.30 SAT 7:10PM<br>
+            보타닉 파크 웨딩 오키드홀
+        </div>
+        <div class="textbox2">
+            저희 두사람이<br>평생을 함께하기 위해<br>서로의 반려자가 되려 합니다.<br>
+            그 진실한 서약을 하는 자리에<br>소중한 분들을 모십니다.<br>
+            자리하시어 축복해 주시면<br>대단히 감사하겠습니다.
+        </div>
+        <div class="textbox3">
+            김차수 · 이태희 의 장남 김솔<br>
+            백영환 · 김언희 의 딸 백시아
+        </div>
     </div>
-    <div class="section">
-        <h1>Section 3</h1>
+    <div class="section" id="calender">
+        <div class="text_date">
+            2024.11.30<br>토요일 오후 7시 10분
+        </div>
+        <div class="section" id="cal">
+            <table id="calendar" class="calendar"></table>
+            <div class="dday">
+                솔 ♥ 시아의 결혼식이 <span id="days-left" class="highlight"></span> 일 남았습니다.
+            </div>
+        </div>
+        <div class="section" id="dday">
+        </div>
     </div>
+    <div class="section" id="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-container">
+            <div class="gallery-slide active" style="background-image: url('./img/IMG_2138.png');">
+                <div class="image"></div>
+            </div>
+            <div class="gallery-slide" style="background-image: url('./img/IMG_2251.png');">
+                <div class="image"></div>
+            </div>
+            <div class="gallery-slide" style="background-image: url('./img/IMG_3138.png');">
+                <div class="image"></div>
+            </div>
+            <div class="gallery-slide" style="background-image: url('./img/IMG_3233.png');">
+                <div class="image"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="section" id="map"></div>
+    <div class="section" id="account"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>

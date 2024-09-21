@@ -1,39 +1,144 @@
-h1 {
-  font-size: 6em;
-  font-size: calc(2em + 2vw);
-  font-family: Arial, Helvetica;
-  margin: 0;
+body {
+  background-color: #fffff0;
+  font-family: "Gowun Batang", serif;
 }
 
-.intro p {
-  width: 50%;
-  margin: 0.5em auto;
-  font-size: 1.65em;
-}
-
-.section {
-  font-family: Arial, Helvetica;
-  color: #fff;
+#fullpage .section {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 20px;
 }
 
-.fp-section:nth-child(1) {
+#main {
   background-image: url(../img/main.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain;
 }
 
-.fp-section:nth-child(2) {
-  background-image: linear-gradient(128deg, #ff9a3f, #ff4b40);
+.textbox1, .textbox2, .textbox3 {
+  width: 100%;
+  margin: 10px;
+  color: #333;
 }
 
-.fp-section:nth-child(3) {
-  background-image: linear-gradient(128deg, #fc40ff, #543fff);
+.textbox1 {
+  padding-top: 5%;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-/* Overwriting styles for the navigation dots */
+.textbox2 {
+  padding-top: 15%;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.textbox3 {
+  padding-top: 20%;
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+
+.text_date {
+  padding-top: 30%;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 10%;
+  letter-spacing: 2px;
+}
+
+#calender{
+  background-color: #fce8d7;
+}
+/* 달력 테이블 기본 스타일 */
+.calendar {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.calendar th, 
+.calendar td {
+  padding: 10px;
+}
+
+/* 30일 강조: 동그라미 배경색 */
+.highlight-day {
+  display: inline-block;
+  width: 40px; /* 동그라미 크기 */
+  height: 40px;
+  line-height: 40px; /* 동그라미 안에서 텍스트 수직 중앙 정렬 */
+  border-radius: 50%; /* 동그라미 모양 만들기 */
+  background-color: #ffb578; /* 원하는 배경색 */
+  color: #000; /* 텍스트 색 */
+  font-weight: bold; /* 텍스트 굵게 */
+}
+
+.dday{
+  padding-top: 15%;
+  font-size: 1.1em;
+}
+
+.highlight {
+  color: #ff7300; /* 원하는 강조 색상 */
+  font-weight: bold; /* 텍스트를 굵게 */
+}
+
+#gallery{
+  width: 100%;
+  background-color: #FFF8DC;
+}
+
+#gallery h1{
+  width: 100%;
+}
+
+.gallery-container {
+  position: relative;
+  width: 425px;
+  max-width: 100%; /* 모바일 화면 기준 최대 너비 */
+  margin: auto;
+  overflow: hidden; /* 넘치는 부분 숨기기 */
+  touch-action: pan-y; /* 수평 스와이프만 가능하도록 설정 */
+  height: 100vh; /* 슬라이드 높이 설정 */
+}
+
+.gallery-slide {
+  display: flex; /* flexbox 활성화 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  transition: opacity 0.5s ease-in-out; /* 애니메이션 효과 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  height: 100vh; /* 화면 높이에 맞게 설정 */
+  opacity: 0; /* 기본적으로 숨김 */
+}
+
+.gallery-slide.active {
+  opacity: 1; /* 현재 슬라이드 보이기 */
+}
+
+
+.gallery-slide img {
+  max-width: 100%; /* 최대 너비 100% */
+  max-height: 100%; /* 최대 높이 100% */
+  margin: auto; /* 중앙 정렬 */
+  display: block; /* 블록 요소로 설정 */
+  position: relative; /* 위치 설정 */
+  top: 50%; /* 수직 중앙 정렬 */
+  transform: translateY(-20%); /* 중앙 정렬 */
+}
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: white;
+  background: #faf3e0;
 }
